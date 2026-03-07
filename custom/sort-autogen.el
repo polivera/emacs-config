@@ -66,5 +66,10 @@
 (setq lock-file-name-transforms `((".*" ,xap/const/auto-saves-path t)))
 (setq bookmark-default-file xap/const/bookmark-file)
 
+;; Built-in mode configurations
+(show-paren-mode 1)
+(electric-pair-mode 1)
+(delete-selection-mode 1)
+(recentf-mode 1)
 
 (provide 'sort-autogen)

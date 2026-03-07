@@ -8,4 +8,8 @@
 
 (require 'elpaca)
 
+(require 'custom-vars)
+(require 'sort-autogen)
+(require 'use-base-config)
+
 ;;; init.el ends here
