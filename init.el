@@ -22,5 +22,8 @@
 (require 'pkg-which-key)
 (require 'pkg-magit)
 (require 'pkg-consult)
+(require 'pkg-corfu)
+(require 'pkg-doom-modeline)
+(require 'pkg-perspective)
 
 ;;; init.el ends here
