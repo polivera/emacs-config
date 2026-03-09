@@ -1,7 +1,7 @@
-;;; evil.el --- Evil mode configuration -*- lexical-binding: t; -*-
+;;; pkg-evil.el --- Evil mode configuration -*- lexical-binding: t; -*-
 
 (use-package evil
-  :ensure (:wait t)
+  :ensure t
   :demand t
   :init
   (setq evil-want-integration t)
@@ -37,6 +37,6 @@
   :config
   (evil-collection-init))
 
-(provide 'evil)
+(provide 'pkg-evil)
 
-;;; evil.el ends here
+;;; pkg-evil.el ends here

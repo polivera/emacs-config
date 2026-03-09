@@ -40,4 +40,4 @@
   (global-set-key (kbd "C-0") #'(lambda() (interactive) (text-scale-set 0)))
   )
 
-(provide 'use-base-config)
+(provide 'xap-use-base-config)

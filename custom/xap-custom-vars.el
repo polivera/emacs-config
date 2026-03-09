@@ -1,4 +1,4 @@
-;;; custom-vars.el --- Custom variables definition -*- lexical-binding: t; -*-
+;;; xap-custom-vars.el --- Custom variables definition -*- lexical-binding: t; -*-
 
 ;; Early init
 (defconst xap/const/gc-cons-threshold gc-cons-threshold "The value for gc-cons-threshold after initialization")
@@ -33,5 +33,5 @@
   "Font size to use when on linux")
 
 ;; End of the file
-(provide 'custom-vars)
+(provide 'xap-custom-vars)
 ;;; custom-vars end here.

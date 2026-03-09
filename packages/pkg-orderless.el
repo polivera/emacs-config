@@ -1,12 +1,12 @@
-;;; orderless.el --- Orderless completion style -*- lexical-binding: t; -*-
+;;; pkg-orderless.el --- Orderless completion style -*- lexical-binding: t; -*-
 
 (use-package orderless
-  :ensure (:wait t)
+  :ensure t
   :demand t
   :custom
   (setq completion-styles '(orderless basic))
   (setq orderless-component-separator '[ orderless-greed: " "]))
 
-(provide 'orderless)
+(provide 'pkg-orderless)
 
-;;; orderless.el ends here
+;;; pkg-orderless.el ends here

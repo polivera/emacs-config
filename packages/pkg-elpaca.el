@@ -1,6 +1,13 @@
-;;; elpaca.el --- Elpaca package manager installation -*- lexical-binding: t; -*-
+;;; pkg-elpaca.el --- Elpaca package manager installation -*- lexical-binding: t; -*-
 
-(require 'sort-autogen)
+(require 'xap-sort-autogen)
+
+(defconst xap/const/elpaca-path 
+          (concat xap/const/autogen-folder-path "elpaca")
+          "Path to elpaca installation and package build")
+
+(unless (file-directory-p xap/const/elpaca-path)
+  (make-directory xap/const/elpaca-path t))
 
 (defvar elpaca-installer-version 0.12)
 (defvar elpaca-directory xap/const/elpaca-path)
@@ -44,4 +51,5 @@
 (elpaca (elpaca-use-package :wait t)
   (elpaca-use-package-mode))
 
-;;; elpaca.el ends here
+(provide 'pkg-elpaca)
+;;; pkg-elpaca.el ends here

@@ -1,4 +1,4 @@
-;;; sort-autogen.el --- Sort autogen files -*- lexical-binding: t; -*-
+;;; xap-sort-autogen.el --- Sort autogen files -*- lexical-binding: t; -*-
 (defconst xap/const/elpa-path 
           (concat xap/const/autogen-folder-path "elpa/") 
           "Path to elpa directory inside autogen folder.")
@@ -35,9 +35,9 @@
 (defconst xap/const/perspective-state-file
           (concat xap/const/autogen-folder-path "projectile/perspective-state")
           "Path to perspective state file.")
-(defconst xap/const/elpaca-path
-          (concat xap/const/autogen-folder-path "elpaca")
-          "Path to elpaca installation and package build")
+(defconst xap/const/straight-path
+          (concat xap/const/autogen-folder-path "straight")
+          "Path to straight installation and package build")
 
 
 ;; Create folder for auto-generated files and package folder
@@ -46,7 +46,7 @@
   (make-directory xap/const/elpa-path t)
   (make-directory xap/const/eln-cache-path t)
   (make-directory xap/const/auto-saves-path t)
-  (make-directory xap/const/elpaca-path t)
+  (make-directory xap/const/straight-path t)
   (make-directory (concat xap/const/autogen-folder-path "projectile/") t)
 )
 
@@ -78,4 +78,4 @@
 (delete-selection-mode 1)
 (recentf-mode 1)
 
-(provide 'sort-autogen)
+(provide 'xap-sort-autogen)

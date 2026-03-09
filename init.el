@@ -6,14 +6,17 @@
 
 ;;; Code:
 
-(require 'elpaca)
+(require 'xap-custom-vars)
+(require 'xap-sort-autogen)
 
-(require 'custom-vars)
-(require 'sort-autogen)
-(require 'use-base-config)
-(require 'evil)
-(require 'vertico)
-(require 'orderless)
-(require 'marginalia)
+(require 'pkg-elpaca)
+
+(require 'xap-use-base-config)
+(require 'pkg-general)
+(require 'pkg-evil)
+(require 'pkg-vertico)
+(require 'pkg-orderless)
+(require 'pkg-marginalia)
+(require 'pkg-magit)
 
 ;;; init.el ends here
