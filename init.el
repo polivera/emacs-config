@@ -11,12 +11,16 @@
 
 (require 'pkg-elpaca)
 
+(require 'pkg-exec-path)
+
 (require 'xap-use-base-config)
 (require 'pkg-general)
 (require 'pkg-evil)
 (require 'pkg-vertico)
 (require 'pkg-orderless)
 (require 'pkg-marginalia)
+(require 'pkg-which-key)
 (require 'pkg-magit)
+(require 'pkg-consult)
 
 ;;; init.el ends here
