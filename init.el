@@ -12,6 +12,7 @@
 (require 'pkg-elpaca)
 
 (require 'pkg-exec-path)
+(require 'pkg-catppuccin)
 
 (require 'xap-use-base-config)
 (require 'pkg-general)
