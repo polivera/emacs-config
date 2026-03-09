@@ -12,5 +12,8 @@
 (require 'sort-autogen)
 (require 'use-base-config)
 (require 'evil)
+(require 'vertico)
+(require 'orderless)
+(require 'marginalia)
 
 ;;; init.el ends here
