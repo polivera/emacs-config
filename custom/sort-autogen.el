@@ -56,6 +56,8 @@
 ;; Set created folders
 (setq package-user-dir xap/const/elpa-path)
 (setq native-compile-cache-dir xap/const/eln-cache-path)
+(setq comp-native-compile-dest-dir xap/const/eln-cache-path)
+(setq native-comp-eln-load-path (cons xap/const/eln-cache-path (default-value 'native-comp-eln-load-path)))
 
 
 ;; Autogenerate files
