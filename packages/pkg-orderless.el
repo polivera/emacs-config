@@ -4,8 +4,11 @@
   :ensure t
   :demand t
   :custom
-  (setq completion-styles '(orderless basic))
-  (setq orderless-component-separator '[ orderless-greed: " "]))
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles orderless basic))))
+  (orderless-component-separator #'orderless-escapable-split-on-space)
+  (completion-ignore-case t)
+  (read-file-name-completion-ignore-case t))
 
 (provide 'pkg-orderless)
 

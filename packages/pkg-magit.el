@@ -12,7 +12,7 @@
 
 (use-package magit
   :ensure t
-  :after general
+  :after (general)
   :config
   (xap/quick-leader
     "g" 'magit-status)

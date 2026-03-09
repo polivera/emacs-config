@@ -28,6 +28,7 @@
     "/" 'comment-or-uncomment-region)
 )
 
+(elpaca-wait)
 
 (provide 'pkg-general)
 ;;; pkg-general.el ends here

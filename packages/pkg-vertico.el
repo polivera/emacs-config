@@ -4,6 +4,10 @@
 (use-package vertico
   :ensure t
   :defer t
+  :general
+  (:keymaps 'vertico-map
+    "C-j" #'vertico-next
+    "C-k" #'vertico-previous)
   :init
   (vertico-mode))
 
