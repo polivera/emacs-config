@@ -71,6 +71,7 @@
 (setq auto-save-file-name-transforms `((".*" ,xap/const/auto-saves-path t))) ;; Set lock files path
 (setq lock-file-name-transforms `((".*" ,xap/const/auto-saves-path t)))
 (setq bookmark-default-file xap/const/bookmark-file)
+(setq project-list-file xap/const/project-list-file)
 
 ;; Built-in mode configurations
 (show-paren-mode 1)

@@ -18,13 +18,13 @@
   (add-hook 'kill-emacs-hook #'persp-state-save))
 
 ;; Auto-create a perspective named after the project when switching projects
-(defun xap/persp-project-switch ()
-  "Switch to a perspective named after the current project."
+(defun xap/persp-project-switch (dir)
+  "Switch to a perspective named after the project at DIR."
   (let ((project-name (file-name-nondirectory
-                       (directory-file-name (project-root (project-current))))))
+                       (directory-file-name dir))))
     (persp-switch project-name)))
 
-(add-hook 'project-switch-hook #'xap/persp-project-switch)
+(advice-add 'project-switch-project :before #'xap/persp-project-switch)
 
 ;; Filter consult-buffer by perspective buffer list (deferred until both are loaded)
 (with-eval-after-load 'consult-buffer
