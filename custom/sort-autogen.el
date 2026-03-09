@@ -35,6 +35,9 @@
 (defconst xap/const/perspective-state-file
           (concat xap/const/autogen-folder-path "projectile/perspective-state")
           "Path to perspective state file.")
+(defconst xap/const/elpaca-path
+          (concat xap/const/autogen-folder-path "elpaca")
+          "Path to elpaca installation and package build")
 
 
 ;; Create folder for auto-generated files and package folder
@@ -43,6 +46,7 @@
   (make-directory xap/const/elpa-path t)
   (make-directory xap/const/eln-cache-path t)
   (make-directory xap/const/auto-saves-path t)
+  (make-directory xap/const/elpaca-path t)
   (make-directory (concat xap/const/autogen-folder-path "projectile/") t)
 )
 

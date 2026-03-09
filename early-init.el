@@ -47,6 +47,8 @@
 (set-face-background 'default xap/const/initial-background-color)
 (set-face-foreground 'default xap/const/initial-foreground-color)
 
+;; Disable package.el to comply with elpaca
+(setq package-enable-at-startup nil)
 
 ;;; early-init.el ends here.
 

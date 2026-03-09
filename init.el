@@ -11,5 +11,6 @@
 (require 'custom-vars)
 (require 'sort-autogen)
 (require 'use-base-config)
+(require 'evil)
 
 ;;; init.el ends here
