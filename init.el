@@ -12,7 +12,11 @@
 (require 'pkg-elpaca)
 
 (require 'pkg-exec-path)
-(require 'pkg-catppuccin)
+;; Themes — uncomment one at a time to try them
+;; (require 'pkg-catppuccin)
+;; (require 'pkg-modus-themes)
+(require 'pkg-doom-themes)
+;; (require 'pkg-ef-themes)
 
 (require 'xap-use-base-config)
 (require 'pkg-general)

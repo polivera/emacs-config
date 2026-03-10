@@ -23,7 +23,7 @@
 
 ;; Font configuration
 (defconst xap/const/font-family
-  "IosevkaTerm Nerd Font"
+  "AporeticSansMono Nerd Font"
   "Default font family.")
 (defconst xap/const/font-size-macos
   145

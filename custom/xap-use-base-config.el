@@ -34,6 +34,10 @@
     (setq mac-option-modifier 'super)     ; alt as meta
     (setq mac-control-modifier 'control))
   
+  ;; Clipboard integration with the OS
+  (setq select-enable-clipboard t)
+  (setq select-enable-primary nil)
+
   ;; Set zoom in and zoom out
   (global-set-key (kbd "C-=") 'text-scale-increase)
   (global-set-key (kbd "C--") 'text-scale-decrease)

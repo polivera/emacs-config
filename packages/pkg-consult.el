@@ -14,6 +14,7 @@
     "fk" '(consult-bookmark :which-key "Bookmarks")
     "fo" '(consult-outline :which-key "Org Outline")
     "fb" '(consult-buffer :which-key "Buffers")
+    "ft" '(consult-theme :which-key "Theme")
     "p" '(nil :which-key "Project")
     "pp" '(project-switch-project :which-key "Switch project")
     "pf" '(project-find-file :which-key "Find file in project")
